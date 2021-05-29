@@ -1,5 +1,13 @@
-function Title() {
-    return <h1> Bienvenue sur Venteenligne</h1>
+import React from 'react'
+
+class Title extends React.Component {
+    render() {
+        return (
+            <div>
+                Bienvenue {this.props.name} sur ma page
+            </div>
+        )
+    }
 }
 
-export default Title;
+export default Title
