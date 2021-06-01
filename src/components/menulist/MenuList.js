@@ -4,9 +4,9 @@ import MenuItem from "./MenuItem";
 function MenuList(props) {
     return (
         <div>
-            {props.menuItem.map(({id,name,description,img,price}) => (
-                <div key={id}>
-                    <MenuItem name={name} description={description} img={img} price={price} />
+            {props.menuItem.map((menuItem) => (
+                <div key={menuItem.id}>
+                    <MenuItem menuItem={menuItem}/>
                 </div>
             ))}
         </div>
